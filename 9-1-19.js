@@ -33,6 +33,10 @@ function isPangram(string){
       })
       .map((x) => x.join(''))
       .join(' ');
+<<<<<<< HEAD
   }
 
   // HELLO BLAH BLAH BLAH
+=======
+  }
+>>>>>>> ba43806427305cba6721253f9ca643d7532ab792
