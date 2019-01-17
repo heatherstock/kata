@@ -1,14 +1,16 @@
+const colors = require('colors');
+
 const describe = (title, fn) => {
-    console.log(title);
+    console.log(title.yellow.bold);
     fn();
 }
 
 const it = (statement, fn) => {
     try {
         fn();
-        console.log(statement);
+        console.log('--'.green.bold, statement.green.bold);
     } catch(err) {
-        console.log('X: ', statement, '====> ',err.message);
+        console.log('-- X:'.red.bold, statement.red.bold, '====> '.red.bold, err.message.red.bold);
     }
 }
 
