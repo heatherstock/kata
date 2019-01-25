@@ -6,10 +6,10 @@ function aPrime(check) {
    }
    
    
-   console.time(‘timer’)
+   console.time('timer')
    const found = [];
    for (let x = 2;  found.length < 10001; x++) {
     if (aPrime(x)) found.push(x);
    }
    console.log(found.pop());
-   console.timeEnd(‘timer’);
+   console.timeEnd('timer');
